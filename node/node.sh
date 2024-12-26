@@ -7,10 +7,10 @@ else
     echo "Node and npm are already installed."
 fi
 
-read -p "Enter the path for the project folder (e.g., /home/user/my-project): " projectPath
+read -p "Enter the project name (e.g., my-project): " projectName
 
-mkdir -p "$projectPath"
-cd "$projectPath" || exit
+mkdir -p "$projectName"
+cd "$projectName" || exit
 
 node -v
 npm -v
