@@ -7,10 +7,10 @@ else
     echo "Node and npm are already installed."
 fi
 
-read -p "Enter the path (e.g., /home/user/my-react-app): " projectPath
+read -p "Enter the project name: " projectName
 
-mkdir -p "$projectPath"
-cd "$projectPath" || exit
+mkdir -p "$projectName"
+cd "$projectName" || exit
 
 npm init -y
 
