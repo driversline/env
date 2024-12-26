@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo pacman -Syu --noconfirm
-
 if ! command -v node &> /dev/null; then
     echo "installing node and npm..."
     sudo pacman -S --noconfirm nodejs npm
