@@ -1,13 +1,15 @@
 #!/bin/bash
 
 if ! command -v node &> /dev/null; then
-    echo "installing node and npm..."
+    echo "Installing node and npm..."
     sudo pacman -S --noconfirm nodejs npm
 else
-    echo "node and npm are already installed."
+    echo "Node and npm are already installed."
 fi
 
 node -v
 npm -v
+
+echo "Excellent."
 
 exit 0
