@@ -15,6 +15,7 @@ cd "$projectName" || exit
 gradle init --type basic
 
 mkdir -p "$projectName/src/main/java/com"
+mkdir -p "$projectName/src/main/resources"
 
 echo "Excellent."
 
