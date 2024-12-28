@@ -12,10 +12,9 @@ read -p "Enter the project name (e.g., my-project): " projectName
 mkdir -p "$projectName"
 cd "$projectName" || exit
 
-gradle init --type basic
+gradle wrapper
 
-mkdir -p "$projectName/src/main/java/com"
-mkdir -p "$projectName/src/main/resources"
+mkdir -p "$projectName/src/main/java/com" "$projectName/src/main/resources" && touch "$projectName/build.gradle" "$projectName/settings.gradle"
 
 echo "Excellent."
 
