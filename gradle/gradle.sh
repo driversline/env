@@ -14,7 +14,23 @@ cd "$projectName" || exit
 
 gradle wrapper
 
-mkdir -p "$projectName/src/main/java/com" "$projectName/src/main/resources" && touch "$projectName/build.gradle" "$projectName/settings.gradle"
+directories=(
+    "$projectName/src/main/java/com"
+    "$projectName/src/main/resources"
+)
+
+files=(
+    "$projectName/build.gradle"
+    "$projectName/settings.gradle"
+)
+
+for dir in "${directories[@]}"; do
+    mkdir -p "$dir"
+done
+
+for file in "${files[@]}"; do
+    touch "$file"
+done
 
 echo "Excellent."
 
