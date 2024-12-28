@@ -12,9 +12,6 @@ read -p "Enter the project name (e.g., my-project): " projectName
 mkdir -p "$projectName"
 cd "$projectName" || exit
 
-node -v
-npm -v
-
 echo "Excellent."
 
 exit 0
